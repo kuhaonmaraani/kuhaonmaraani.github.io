@@ -1,0 +1,230 @@
+html {
+    box-sizing: border-box;
+    font-size: calc(15px + 0.390625vw);
+    font-family: "Raleway", sans-serif; 
+    color: #303193;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: calc(73px + 12vw);
+    margin-left: 8vw;
+    margin-top: 2vw;
+}
+
+
+/*-------------------------------
+------------ NAVBAR -------------
+---------------------------------*/
+
+
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    font-size: calc(16px + 0.390625vw);
+    color: #303193;
+    font-weight: 600;
+    padding-top: 2vw;
+}
+
+.brand-title {
+    font-size: calc(25px + 0.390625vw);
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    color: #303193;
+    font-weight: 800;
+    margin-left: 8vw;
+    margin-bottom: 0vw;
+}
+
+.brand-title a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 0vw;
+    color: #303193;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin-right: 8vw;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    padding-left: 8vw;
+    margin-top: 1vw;
+    margin-bottom: 0vw;
+    color: #303193;
+}
+
+.navbar-links li:hover {
+    text-decoration: underline;
+}
+
+
+
+/*-------------------------------
+------------ BANNER -------------
+---------------------------------*/
+
+
+
+.banner {
+    display: flex;
+    background-color: black;
+    
+}
+
+.banner h1 {
+    position: relative;
+    font-size: calc(20px + 0.390625vw);
+    color: white;
+    top: 3vw;
+    left: 8vw;
+    font-weight: 600;
+    margin: 0vw;
+}
+
+.banner h2 {
+    position: relative;
+    font-size: calc(15px + 0.390625vw);
+    color: white;
+    top: 3vw;
+    left: 10vw;
+    padding: 1vw;
+    width: 40vw;
+    border-left: 0.3vw solid #02B8CE;
+    font-weight: 400;
+}
+
+.banner h3 {
+    position: relative;
+    margin-left: 3vw;
+    margin-top: 3vw;
+    margin-right: 8vw;
+    font-size: calc(20px + 0.390625vw);
+    color: white;
+    font-weight: 600;
+}
+
+
+.banner p {
+    position: relative;
+    margin-right: 8vw;
+    margin-left: 3vw;
+    float: right;
+    font-size: calc(15px + 0.390625vw);
+    color: white;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+    background-image: url(taustakuva111.jpeg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 75vw;
+
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    background-color: #303193;
+}
+
+
+
+/*-------------------------------
+---------- CONTAINER ------------
+---------------------------------*/
+
+
+
+.container {
+    display: flex;
+    margin-top: 5vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 5vw;
+}
+
+.container h1 {
+    margin-top: 0;
+    font-size: calc(20px + 0.390625vw);
+    font-weight: 600;
+}
+
+.container p {
+    font-size: calc(15px + 0.390625vw);
+}
+
+.container img {
+    width: 40vw;
+    padding-left: 5vw;
+}
+
+
+
+/*-------------------------------
+------------ FOOTER -------------
+---------------------------------*/
+
+
+
+footer {
+    background-color: #3A66E3;
+    color: white;
+    display: flex;
+    padding: 1vw 8vw;
+    justify-content: space-between;
+}
+
+footer h1 {
+    font-size: calc(20px + 0.390625vw);
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0vw;
+    color: white;
+    font-size: calc(15px + 0.390625vw);
+}
+
+footer li {
+    padding-bottom: 1vw;
+    padding-left: 0.5vw;
+}
+
+footer img {
+    position: relative;
+    top: 60%;
+    filter:  brightness(0) invert(1);
+}
