@@ -1,84 +1,66 @@
 html {
     box-sizing: border-box;
     font-family: "Playfair Display"; 
-    color: white;
-    background-color: #161620;
+    color: black;
+    background-color: white;
     margin: 0;
+    font-family: "Nunito";
 }
 
 body {
     margin: 0;
-    padding: 0;
+}
+
+
+h1 { 
     text-align: center;
+    letter-spacing: 3px;
+    margin: 10vw;
+    font-size: calc(30px + 0.390625vw);
+}
+
+h2 { 
+    font-family: DM Serif Display;
+    text-align: center;
+    font-weight: 500;
+    padding: 3vw 10vw 3vw 10vw;
+    font-size: calc(25px + 0.390625vw);
+    letter-spacing: 1.5px;
+    margin-top: 0vw;
+}
+
+p {
+    font-size: calc(15px + 0.390625vw);
+    margin-bottom: 5vw;
+}
+
+.vline {
+    position: relative;
+    border-left: 2px solid #354F52;
+    border-right: 2px solid #354F52;
+    height: 10vw;
+    width: 0;
+    border-radius: 2px;
+    content: "";
 }
 
 /*-------------------------------
------------- BANNER -------------
+------------ HEADER -------------
 ---------------------------------*/
 
-.first {
-    display: inline-block;
-    font-size: calc(45px + 0.390625vw);
-    color: #fa7cca;
-    width: 100%;
-    margin-bottom: 0%;
-    padding-bottom: 0;
-    padding-top: 8vw;
-    font-weight: 1000;
-    font-family: "Bungee Hairline";
-    text-shadow:0 0 20px #FF66C4;
-}
 
-.and {
-    display: inline-block;
-    font-size: calc(80px + 0.390625vw);
-    color: white;
-    width: 100%;
-    padding: 0%;
-    margin: 0%;
-    font-weight: 400;
-    position: relative;
-    top: 0;
-    transform: translate(0,-80px);
-    font-family: Verdana;
-    z-index: -1;
-    text-shadow:0 0 15px white;
-
-}
-
-.money {
-    display: inline-block;
-    font-size: calc(80px + 0.390625vw);
-    color: #2a804f;
-    width: 100%;
-    margin: 0%;
-    padding: 0;
-    font-weight: 400;
-    transform: translate(0,-130px);
-    font-family: "Kumar One Outline";
-    text-shadow:0 0 10px #008037;
-}
 
 .banner {
     display: inline-block;
-    font-size: calc(20px + 0.390625vw);
-    color: white;
-    border-top: 0.3vw solid #FFBD59;
-    border-bottom: 0.3vw solid #FFBD59;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
-    position: relative;
-    transform: translate(0, -20px);
-    top: 0px;
+    border-top: 4px solid #354F52;
+    border-bottom: 4px solid #354F52;
+    border-radius: 2px;
+    
 }
 
 .intro {
     display: inline-block;
     font-size: calc(15px + 0.390625vw);
-    color: rgb(189, 178, 178);
-    font-style: italic;
-    padding-left: 15vw;
-    padding-right: 15vw;
 }
 
 
@@ -96,31 +78,14 @@ body {
     margin-right: 15vw;
     margin-bottom: 5vw;
     flex-direction: column;
-}
-
-.container h1 {
-    margin: 0;
-    font-size: calc(70px + 0.390625vw);
-    font-weight: 400;
-    color: #ffbd5975;
-}
-
-.container h2 {
-    margin: 0;
-    font-size: calc(25px + 0.390625vw);
-    font-weight: 600;
-    top:0%;
-    transform: translate(0, -72px);
-    font-family: "Bungee Hairline";
-    text-shadow:0 0 20px whitesmoke;
-}
-
-.container p {
-    font-size: calc(15px + 0.390625vw);
     text-align: left;
-    font-weight: 400;
+    align-items: center;
 }
 
+.tableauPlaceholder {
+    position: relative;
+    margin: 5vw 0vw 5vw 0vw;
+}
 
 /*-------------------------------
 ------------ FOOTER -------------
@@ -129,16 +94,16 @@ body {
 
 
 footer {
-    color: #FFBD59;
     display: flex;
-    padding: 1vw 20vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vw;
 }
 
 footer ul {
     list-style: none;
     display: flex;
     padding-left: 0vw;
-    color: #FFBD59;
     font-size: calc(15px + 0.390625vw);
     align-items: stretch;
     justify-content: space-between;
