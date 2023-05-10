@@ -15,7 +15,7 @@ body {
 h1 { 
     text-align: center;
     letter-spacing: 3px;
-    margin: 10vw;
+    margin: 3vw 10vw 0vw 10vw;
     font-size: calc(30px + 0.390625vw);
 }
 
@@ -23,22 +23,21 @@ h2 {
     font-family: DM Serif Display;
     text-align: center;
     font-weight: 500;
-    padding: 3vw 10vw 3vw 10vw;
-    font-size: calc(25px + 0.390625vw);
+    font-size: calc(20px + 0.390625vw);
     letter-spacing: 1.5px;
-    margin-top: 0vw;
+    margin: 0vw;
 }
 
 p {
     font-size: calc(15px + 0.390625vw);
-    margin-bottom: 5vw;
+    margin-top: calc(10px + 0.390625vw);
 }
 
 .vline {
     position: relative;
     border-left: 2px solid #354F52;
     border-right: 2px solid #354F52;
-    height: 10vw;
+    height: calc(40px + 0.390625vw);
     width: 0;
     border-radius: 2px;
     content: "";
@@ -55,6 +54,9 @@ p {
     border-top: 4px solid #354F52;
     border-bottom: 4px solid #354F52;
     border-radius: 2px;
+    padding: calc(10px + 0.390625vw) calc(30px + 0.390625vw) calc(10px + 0.390625vw) calc(30px + 0.390625vw);
+    margin-top: calc(30px + 0.390625vw);
+    font-size: calc(25px + 0.390625vw);
     
 }
 
@@ -73,10 +75,7 @@ p {
 
 .container {
     display: flex;
-    margin-top: 5vw;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    margin-bottom: 5vw;
+    margin: calc(30px + 0.390625vw) 15vw calc(30px + 0.390625vw) 15vw;
     flex-direction: column;
     text-align: left;
     align-items: center;
@@ -84,7 +83,7 @@ p {
 
 .tableauPlaceholder {
     position: relative;
-    margin: 5vw 0vw 5vw 0vw;
+    margin: 2vw 0vw 2vw 0vw;
 }
 
 /*-------------------------------
