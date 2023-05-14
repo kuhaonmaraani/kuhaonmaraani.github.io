@@ -81,7 +81,9 @@ p {
     align-items: center;
 }
 
-.tableauPlaceholder {
+.tableauPlaceholder {.reso, .meridi, .syn {
+    display: none;
+  }
     position: relative;
     margin: 2vw 0vw 2vw 0vw;
 }
@@ -115,3 +117,7 @@ footer li {
     padding-bottom: 1vw;
     padding-left: 0.5vw;
 }
+
+.set{
+    display: none;
+  }
