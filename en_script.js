@@ -1,4 +1,5 @@
 function showSet(setId) {
+    // hide all sets
     var resoset = document.getElementById('reso');
     var meridiset = document.getElementById('meridi');
     var synset = document.getElementById('syn');
@@ -50,15 +51,13 @@ function showSet(setId) {
             synbut.innerHTML = 'Hide Synop'
         }
     }
-  }
-
+  };
 
 function showCap(capId) {
     var cap = document.getElementById('cap' + capId);
     var capsetting = cap.style.display;
-    var capbut = document.getElementById('cap' + capId)
+    var capbut = document.getElementById('capbut' + capId)
 
-    console.log('cap');
     if (capsetting == 'block') {
         cap.style.display = 'none';
         capbut.innerHTML = 'View caption';
@@ -68,4 +67,8 @@ function showCap(capId) {
         cap.style.display = 'block';
         capbut.innerHTML = 'Hide caption';
     }
-  }
+  };
+
+
+
+
