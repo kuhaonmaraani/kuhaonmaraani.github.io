@@ -1,0 +1,309 @@
+html {
+    box-sizing: border-box;
+    font-size: 1.3vw;
+    font-family: "Montserrat", sans-serif; 
+    color: #303193;
+    background-color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: calc(73px + 9vw);
+    height: auto;
+    object-fit: contain;
+    padding-top: 1vw;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0vw 13vw 1vw 13vw;
+    font-size: 1vw;
+}
+
+
+/*-------------------------------
+
+------------ NAVBAR -------------
+
+---------------------------------*/
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    text-shadow: 1px 1px 15px rgba(0,0,0,0.2);
+    font-size: 1vw;
+    color: #303193;
+    font-weight: 600;
+    padding-top: 2vw;
+    margin-left: 13vw;
+    margin-right: 13vw;
+    padding-bottom: 1vw;
+}
+
+.brand-title {
+    font-size: 2vw;
+    font-family: 'Bodoni Moda';
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    color: #303193;
+    font-weight: 800;
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+
+.brand-title a {
+    display: block;
+    text-decoration: none;
+    color: #303193;
+    margin-bottom: 0;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: flex-end;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin-left: 2vw;
+    align-items: flex-end;
+}
+
+.navbar-links li {
+    list-style: none;
+    margin-left: 2vw;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    margin-left: 2vw;
+    color: #303193;
+}
+
+.navbar-links li:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: #303193;
+    font-family: 'Montserrat';
+}
+
+/* Style for the dropdown button */
+.dropdown .dropdown-btn {
+    padding: 0px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    color: #303193;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 1vw;
+}
+
+/* Style for the dropdown content */
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style for the dropdown links */
+.dropdown .dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #303193;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 1vw;
+}
+
+/* Style for the dropdown links on hover */
+.dropdown .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown content when the dropdown button is hovered */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+/*-------------------------------
+
+------------ BANNER -------------
+
+---------------------------------*/
+
+
+
+.banner {
+    position: relative;
+    display: flex;
+    background-color: black;
+    min-width: 100%;
+    max-height: 80vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner h1 {
+    position: absolute;
+    font-size: 1.3vw;
+    color: white;
+    font-weight: 600;
+    top: 10%;
+    left: 13.5vw;
+
+}
+
+.banner h2 {
+    position: absolute;
+    font-size: 1vw;
+    color: white;
+    padding: 0.7vw 0vw 0.3vw 1vw;
+    width: 40vw;
+    border-left: 0.3vw solid #C74FD1;
+    font-weight: 400;
+    top: 17%;
+    left: 15vw;
+}
+
+
+.banner img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+}
+
+
+
+
+/*-------------------------------
+
+---------- CONTAINER ------------
+
+---------------------------------*/
+
+
+
+.center {
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+}
+
+.center img {
+    align-self: center;
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+.caption {
+    font-style: italic;
+    font-size: 1vw;
+    align-self: center;
+    padding-top: 1vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 5vw 13vw 5vw 13vw;
+    flex-grow: 1;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.container h1 {
+    margin-top: 0;
+    font-size: 1.4vw;
+    font-weight: 600;
+}
+
+.container p {
+    font-size: 1.1vw;
+    margin-right: 3vw;
+}
+
+
+.column {
+    flex-direction: column;
+    width: 50%;
+}
+
+.column2 {
+    flex-direction: column;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.column2 li {
+    list-style: none;
+    margin: 0vw 0vw 1vw 0vw;
+    padding: 0;
+    font-size: 1.2vw;
+}
+
+.column2 ul {
+    padding: 0;
+    margin: 0;
+} 
+
+/*-------------------------------
+
+------------ FOOTER -------------
+
+---------------------------------*/
+
+
+
+footer {
+    background-color: #3A66E3;
+    color: white;
+    display: flex;
+    padding: 1vw 8vw 1vw 8vw;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+footer li {
+    padding-bottom: 1vw;
+    padding-left: 0.5vw;
+}
+
+footer img {
+    filter:  brightness(0) invert(1);
+    width: auto;
+    height: 5vw;
+}
+

@@ -1,0 +1,154 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bodoni+Moda" rel="stylesheet">
+        <link rel="stylesheet" href="style_current_cameras.css">
+        <script src="script.js" defer></script>
+        <title>MIRACLE ASC</title>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width'>
+        <link rel="icon" href="pictures/fmi_icon.png" type="image/x-icon">
+    </head>
+    <body>
+
+
+        <!-- -----------------  HEADER & NAVIGATION  -------------------- -->
+        
+        
+        
+        <div class="header">
+            <img src='pictures\fmi_logo.jpg' alt='The logo of the Finnish meteorological institute: a blue circle with intersecting half circles inside.' class='logo'>
+            <p><a href="#">FIN</a> <a href="#">ENG</a></p>
+        </div>
+        <nav class="navbar">
+            <div class="brand-title"><a href="index.html">MIRACLE ASC</a></div>
+            <div class="navbar-links">
+                <ul>
+                    <li><div class="dropdown">
+                        <button class="dropdown-btn">CAMERAS</button>
+                        <div class="dropdown-content">
+                            <a href="cameras.html">CAMERA STATIONS</a>
+                            <a href="current_cameras.html">CURRENT CAMERAS</a>
+                            <a href="old_cameras.html">OLD CAMERAS</a>
+                        </div></div></li>
+                    <li><a href="imagepr.html">IMAGE PROCESSING</a></li>
+                    <li><a href="data.html">QUICK LOOK DATA</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        
+        
+        <!-- -------------------------  BANNER  ------------------------- -->
+
+
+        <div class="banner">
+            <h1>CURRENT CAMERAS</h1>
+        </div>
+
+
+        <!-- -------------------------  CONTAINER  ----------------------- -->
+
+
+        <div class="container">
+            <div class="column1">
+                <h1>The emCCD all-sky imagers at Kilpisjärvi</h1>
+                <p>The all-sky imager that use the electron multiplication CCD technology is manufactured
+                    by Keo Scientific. The imager has telecentric and non-vignetting optics, and the field
+                    of view of the fish-eye lens is 180 degrees. A mechanical shutter protects the filters
+                    and CCD from direct sunlight.</p>
+                <p>The filter wheel can accommodate eight narrow bandwidth interference filters. 
+                    One filter holder is left "free" to be able to acquire non-filtered images. 
+                    Every station has six filters: green, blue, red, and a background filter 
+                    for each colour.</p>
+                <p>The signal-to-noise ratio and the dynamic range of this system are much higher 
+                    compared to the previous generation devices. The imaging mode is frequently
+                     modified to be synchronised with other measurements in the same region but it
+                      typically consists of one green and one blue line image at least every 10 sec, 
+                      as well as one red line image every 30 sec. For green, blue and red auroras the 
+                      exposure times are 80, 1200, and 1200 milliseconds, respectively. 
+                      Standard imaging modes include at least 15 images per minute. The data are 
+                      stored in 16-bit png/jp2 files with 512x512 pixel resolution.</p>
+                <p>Each all-sky image file name consists of the information on which station took
+                    the image, the date and time of the image, the filter selection and the exposure 
+                    time. North is to the top and east to the right in the image.</p>
+                <br>
+                <h1>Sample images: old and new cameras compared</h1>
+                <p>FMI and SGO purchased EMCCD cameras in 2007 with the plan to use them to
+                    replace gradually aging intensified CCD cameras. SGO operated both the 
+                    old and new ASCs in Sodankylä for some weeks. Below are nearly simultaneous 
+                    sample images on 5 Jan, 2008 at the blue wavelength from Sodankylä where 
+                    both the intensified imager and the emCCD camera are operated under the same dome.</p>
+                <br>
+                <div class="center">
+                    <img src="pictures/SODold.jpg" alt="">
+                    <div class="caption">An intensified ASC image from SOD at 22:58:00 UT</div>
+                </div>
+    
+            </div>
+            <div class="column2">
+                <div class="center">
+                    <img src="pictures/imager_emccd_small.jpg">
+                    <div class="caption">Current emCCD all-sky imager. Photo: Jyrki Mattanen.</div>
+                </div>
+                <br> 
+                <h1>Technical details</h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th style="font-weight: 800;">FISH-EYE LENS</th>
+                            <th>Mamiya Sekor 24mm f/4</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">ADDITIONAL OPTICS</th>
+                            <th>Telecentric lens elements</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">FILTER WHEEL</th>
+                            <th>8-position filter wheel for 3" filters</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">FILTERS</th>
+                            <th>Wavelengths 427.8nm, 438.0nm, 540.0nm, 557.7nm, 620.0nm, 630.0nm (BW 2.0nm)</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">RE-IMAGING OPTICS</th>
+                            <th>Schneider Optics Inc. Century Achromatic Diopter +3.5</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">CCD CAMERA LENS</th>
+                            <th>Canon 50mm f/0.95</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">CCD CAMERA</th>
+                            <th>Andor iXonEM + DU-888 (1024x1024 pixels)</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <h1>Colour all-sky cameras</h1>
+                <p>In 2018 FMI joined to the Boreal Auroral Camera Constellation (BACC) by 
+                    purchasing BACC-compliant color cameras which are currently operated 
+                    at Kevo and Muonio stations. More information about BACC system is 
+                    available from a living report.</p>
+                <div class="center">
+                    <img src="pictures/SODnew.jpg" alt="">
+                    <div class="caption">An emCCD image from SOD at 22:58:10.21 UT</div>
+                </div>
+                <br>
+            </div>
+        </div>
+        
+        
+        <!-- -------------------------  FOOTER  --------------------------- -->
+
+
+        <footer>
+            <img src='pictures\il-logo-fi-se-en-white-crop.png' alt='The logo of the Finnish meteorological institute: a white circle with intersecting half circles inside.'>
+        </footer>
+    </body>
+</html>

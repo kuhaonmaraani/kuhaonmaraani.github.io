@@ -1,0 +1,121 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bodoni+Moda" rel="stylesheet">
+        <link rel="stylesheet" href="style_imagepr.css">
+        <script src="script.js" defer></script>
+        <title>MIRACLE ASC</title>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width'>
+        <link rel="icon" href="pictures/fmi_icon.png" type="image/x-icon">
+    </head>
+    <body>
+
+
+        <!-- -----------------  HEADER & NAVIGATION  -------------------- -->
+        
+        <div class="header">
+            <img src='pictures\fmi_logo.jpg' alt='The logo of the Finnish meteorological institute: a blue circle with intersecting half circles inside.' class='logo'>
+            <p><a href="#">FIN</a> <a href="#">ENG</a></p>
+        </div>
+        <nav class="navbar">
+            <div class="brand-title"><a href="index.html">MIRACLE ASC</a></div>
+            <div class="navbar-links">
+                <ul>
+                    <li><div class="dropdown">
+                        <button class="dropdown-btn">CAMERAS</button>
+                        <div class="dropdown-content">
+                            <a href="cameras.html">CAMERA STATIONS</a>
+                            <a href="current_cameras.html">CURRENT CAMERAS</a>
+                            <a href="old_cameras.html">OLD CAMERAS</a>
+                        </div></div></li>
+                    <li><a href="imagepr.html">IMAGE PROCESSING</a></li>
+                    <li><a href="data.html">QUICK LOOK DATA</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        
+        <!-- -------------------------  BANNER  ------------------------- -->
+
+
+        <div class="banner">
+            <h1>IMAGE PROCESSING</h1>
+        </div>
+
+
+        <!-- -------------------------  CONTAINER  ----------------------- -->
+
+        <div class="container">
+            <div class="column1">
+                <h1>Map projection</h1>
+                <p>The fish-eye lens of the new all-sky imagers uses equidistant projection to 
+                    image the half-space onto the image plane. This means that the angle between 
+                    an incoming light ray and the optical axis and displacement of the image 
+                    point in the CCD cell are linearly dependent.</p>
+                <p>In practice this means that the image is circular (the maximum 
+                    incoming angle is 90 degrees). The horizon is imaged furthest away from 
+                    the centre of the circle, and the zenith (ie. straight up) is in the centre 
+                    of the image. When doing the mapping you need to make an assumption of the 
+                    altitude of the auroras. In addition, you need to know the pixel location 
+                    of the optical axis of the camera (x0,y0), the conversion factor between 
+                    the elevation angle and pixel distance (k), and the rotation angle to 
+                    get the north direction exactly to the top of the image (alpha). The 
+                    parameters (x0,y0), k and alpha can change slightly from season to season. 
+                    So, for accurate results you are encouraged to ask the parameters from the 
+                    ASC contact persons.</p>
+                <p>Now, take a look at the image below: there is an auroral arc to 
+                    the north of the station and the bright spot in south is the Moon. If we 
+                    map the image to an altitude of 110km we can see results in the image to 
+                    the right. The green diamonds are placed in Kilpisjärvi, Muonio, Abisko and Kiruna.</p>
+                <br>
+
+                <div class="center">
+                    <img src="pictures/impr.jpg" alt="">
+                    <div class="caption">ASC image by the intensified CCD camera located at Kilpisjärvi (Feb 16,1997 ; 19:53 UT).</div>
+                </div>
+                <br>
+                
+                <div class="center">
+                    <img src="pictures/impr2.jpg" alt="">
+                    <div class="caption">A mapped ASC image by the intensified CCD camera located at Kilpisjärvi (Feb 16,1997 ; 19:53 UT). The altitude of auroras is assumed to be 110 km.</div>
+                </div>
+                <br>
+            </div>
+            <div class="column2">
+                
+                <h1>Creating keograms</h1>
+                <p>Keograms are used in analysing auroral phenomena. They are created 
+                    by extracting vertical pixel columns from individual all-sky images 
+                    and putting the columns side by side. The horizontal axis is the time 
+                    and the vertical axis is the geographical latitude. This is demonstrated
+                     on the left. The name keogram comes from keoitt - an old Eskimoan word 
+                     which means aurora borealis.</p>
+                <p>For example, in the keogram shown below one can easily detect a southward
+                     moving bright arc beginning at UT1900. This is typical for the growth
+                      phase of a substorm. Just before UT2000 the whole vertical line is 
+                      filled with aurora, which indicates a break-up. After about 30 minutes 
+                      things calm down which seems to start the recovery phase.</p>
+                    <div class="center">
+                        <img src="pictures/keo2.jpg" style="padding-top: 1.5vw;">
+                        <div class="caption">A keogram showing a southward drifting arc (19-20 UT)</div>
+                    </div>
+                    <div class="center">
+                        <img src="pictures/keogram.gif">
+                    </div>
+                         
+            </div>
+        </div>
+        
+        <!-- -------------------------  FOOTER  --------------------------- -->
+
+
+        <footer>
+            <img src='pictures\il-logo-fi-se-en-white-crop.png' alt='The logo of the Finnish meteorological institute: a white circle with intersecting half circles inside.'>
+        </footer>
+    </body>
+</html>

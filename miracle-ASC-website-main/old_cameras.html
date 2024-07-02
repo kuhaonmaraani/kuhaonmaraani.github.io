@@ -1,0 +1,272 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bodoni+Moda" rel="stylesheet">
+        <link rel="stylesheet" href="style_old_cameras.css">
+        <script src="script.js" defer></script>
+        <title>MIRACLE ASC</title>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width'>
+        <link rel="icon" href="pictures/fmi_icon.png" type="image/x-icon">
+    </head>
+    <body>
+
+
+        <!-- -----------------  HEADER & NAVIGATION  -------------------- -->
+        
+        
+        
+        <div class="header">
+            <img src='pictures\fmi_logo.jpg' alt='The logo of the Finnish meteorological institute: a blue circle with intersecting half circles inside.' class='logo'>
+            <p><a href="#">FIN</a> <a href="#">ENG</a></p>
+        </div>
+        <nav class="navbar">
+            <div class="brand-title"><a href="index.html">MIRACLE ASC</a></div>
+            <div class="navbar-links">
+                <ul>
+                    <li><div class="dropdown">
+                        <button class="dropdown-btn">CAMERAS</button>
+                        <div class="dropdown-content">
+                            <a href="cameras.html">CAMERA STATIONS</a>
+                            <a href="current_cameras.html">CURRENT CAMERAS</a>
+                            <a href="old_cameras.html">OLD CAMERAS</a>
+                        </div></div></li>
+                    <li><a href="imagepr.html">IMAGE PROCESSING</a></li>
+                    <li><a href="data.html">QUICK LOOK DATA</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        
+        
+        <!-- -------------------------  BANNER  ------------------------- -->
+
+
+        <div class="banner">
+            <h1>OLD CAMERAS</h1>
+        </div>
+
+
+        <!-- -------------------------  CONTAINER  ----------------------- -->
+
+
+        <div class="container">
+            <div class="column1">
+                <h1>Intensified all-sky imagers</h1>
+                <p>The all-sky imagers that were operated by FMI until 2007 used intensified all-sky cameras
+                    which have been manufactured by KeoConsultants. Each imager had telecentric 
+                    and non-vignetting optics, and the field of view of the fish-eye lens was 180 degrees.
+                    The filter wheel had seven slots for narrow bandwidth interference filters. 
+                    In normal operation one filter holder was empty to allow acquiring non-filtered, 
+                    star images, which were used for geometric calibration. Every station had filters 
+                    for green, blue, and red line emission.
+                    </p>
+                <p>The faint images were intensified before the final image was acquired by the 
+                    CCD camera (B&W) and digitised by the frame grabber card of the station 
+                    computer. This intensification allows shorter exposure times with less expensive 
+                    CCD cameras, and typically an exposure takes 500ms. A standard imaging sequence 
+                    included one green line image every 20 sec, and one blue and red line image 
+                    every 60 sec. Non-filtered images were taken at least once an hour. All 
+                    images were stored in 8-bit JPG format with 512x512 pixel resolution. The 
+                    operation of the imager was controlled by the station computer of the all-sky 
+                    camera station.</p>
+                <div class="center">
+                    <img src="pictures/all_sky_imager.png" alt="">
+                    <div class="caption">All-sky imager depiction</div>
+                </div>
+                <br> 
+                <h1>Old all-sky mirror cameras</h1>
+                <p>The "historical" all-sky cameras used a downward-looking film camera and a 
+                    spherical mirror to image the whole sky. There were also three light standards 
+                    and a small display that were imaged at the same time.
+                    There were no filters, and the colours depended on the type of film 
+                    that is used. The light standards had a known "colour" and could be used 
+                    in calibrating the results.</p>
+                <p>Normally the camera took one image per minute, but it was possible to take 
+                    images every 20 seconds (for campaigns etc.). There were a couple of fixed 
+                    exposure times; mostly an exposure of two seconds was used and every tenth 
+                    image was exposed longe</p>
+                <p>The operation of the imager is started and stopped manually, and after the 
+                    film is full, one has to develop it before use. The films are the copied 
+                    to video tapes from which interesting events are digitised for computer use.</p>
+                <br>
+                <h1>FMI mirror camera sample images</h1>
+                <p>The images taken by the historical cameras (used before 1996) contain 
+                    information about the date and time when the image was taken. Also, 
+                    three light standards were also imaged. Note that because this camera 
+                    construction used a spherical mirror the camera blocked the centre of 
+                    the image. Thus the green light standard could be placed in the middle 
+                    of the spherical mirror without losing important details from the zenith</p>
+                <p>The sample images here have been compressed with lossy compressing 
+                    JPEG-compression. This means that small details in the images are lost but that 
+                    the compression ratio is larger.</p>
+                <br>
+                <div class="center">
+                    <img src="pictures/oldasc_sample.gif" alt="">
+                    <div class="caption"></div>
+                </div>
+                <br>
+                <div class="center">
+                    <img src="pictures/old_demo3.jpg" alt="">
+                    <div class="caption">A beautiful auroral arc</div>
+                </div>
+                <br>
+                <div class="center">
+                    <img src="pictures/old_demo2.jpg" alt="">
+                    <div class="caption">A nice green auroral arc</div>
+                </div> 
+            
+            </div>
+            <div class="column2">
+                <h1>Colour all-sky cameras</h1>
+                <p>In 2007 FMI purchased two color cameras which replaced the intensified 
+                    CCD cameras at Kevo and Muonio. The images are read in a fast mode 
+                    which includes binning in one direction. An additional colour 
+                    conversion is needed to produce full colour 8-bit jpg images. 
+                    Due to the broad-band colour matrix integrated on the CCD these 
+                    instruments capture all light within the visible wavelength range, 
+                    and are thus very sensitive to light pollution. More detailed 
+                    description of the ASC colour conversion can be found in 
+                    <a href="https://spie.org/Publications/Proceedings/Paper/10.1117/12.617801?SSO=1">Syrjäsuo et al</a>. </p>
+                <br>
+                <h1>Colour all-sky cameras technical details</h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th style="font-weight: 800;">CCD CAMERA</th>
+                            <th>Starlight Xpress MX7C/th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">OPTICS</th>
+                            <th>Keo Horizon fish-eye</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">IMAGING INTERVAL</th>
+                            <th>10 seconds</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">COLOUR MATRIX</th>
+                            <th>CMYG</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">READ-OUT</th>
+                            <th>Fast mode binning to 512x265</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">EXPOSURE TIME</th>
+                            <th>1-4 seconds</th>
+                        </tr>
+                    </tbody>
+                </table> 
+                <br>
+
+                <div class="center">
+                    <img src="pictures/old_cameras.jpg" alt="">
+                    <div class="caption">Old cameras</div>
+                </div>
+                <br> 
+                <h1>Technical details</h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th style="font-weight: 800;">FISH-EYE LENS</th>
+                            <th>Canon 15mm/F2.8</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">ADDITIONAL OPTICS</th>
+                            <th>Telecentric lens elements</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">FILTER WHEEL</th>
+                            <th>5-position filter wheel for 2" filters</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">FILTERS</th>
+                            <th>Interference filters, wavelengths 557.7nm, 427.8nm, and 630.0nm (BW 2.0nm)</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">INTENSIFIER LENS</th>
+                            <th>Canon 85mm/F1.2</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">IMAGE INTENSIFIER</th>
+                            <th>Varo 25mm MCP Gen II Image Intensifier model 3603</th>
+                        </tr>
+
+                        <tr>
+                            <th style="font-weight: 800;">RE-IMAGING OPTICS</th>
+                            <th>Canon 100mm/F2</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">CCD CAMERA LENS</th>
+                            <th>Fujinon 25mm/F0.85</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">CCD CAMERA</th>
+                            <th>Fujinon 25mm/F0.85</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <div class="center">
+                    <img src="pictures/mirror_camera.png" alt="">
+                    <div class="caption">Old mirror camera depiction</div>
+                </div>
+                <br>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th style="font-weight: 800;">CAMERA</th>
+                            <th>Baillard Bolex Type H 16 M-5 (16mm)</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">CAMERA OBJECTIVE</th>
+                            <th>Angenieux B 25mm, 1:0.95</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">SPHERICAL MIRROR</th>
+                            <th>Segment 208.5mm, r=140.0mm, f=690mm</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">IMAGE INTERVALS</th>
+                            <th>20s or 1, 2, 10, 20, or 60 minutes</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">EXPOSURE TIMES</th>
+                            <th>2, 4, 8 or 16s</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">GREEN LIGHT STANDARD</th>
+                            <th>FO4/G/300 (540nm)</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">WHITE LIGHT STANDARD</th>
+                            <th>FO8/W/300 (560nm)</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 800;">RED LIGHT STANDARD</th>
+                            <th>FO8/R/30 (608nm)</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <BR>
+                <div class="center">
+                    <img src="pictures/old_demo1.jpg" alt="">
+                    <div class="caption">Green aurorae</div>
+                </div>          
+            </div>
+        </div>
+        
+        
+        <!-- -------------------------  FOOTER  --------------------------- -->
+
+
+        <footer>
+            <img src='pictures\il-logo-fi-se-en-white-crop.png' alt='The logo of the Finnish meteorological institute: a white circle with intersecting half circles inside.'>
+        </footer>
+    </body>
+</html>

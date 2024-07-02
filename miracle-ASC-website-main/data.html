@@ -1,0 +1,167 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bodoni+Moda" rel="stylesheet">
+        <link rel="stylesheet" href="style_data.css">
+        <script src="script.js" defer></script>
+        <title>MIRACLE ASC</title>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width'>
+        <link rel="icon" href="pictures/fmi_icon.png" type="image/x-icon">
+    </head>
+    <body>
+
+
+        <!-- -----------------  HEADER & NAVIGATION  -------------------- -->
+        
+        
+        <div class="header">
+            <img src='pictures\fmi_logo.jpg' alt='The logo of the Finnish meteorological institute: a blue circle with intersecting half circles inside.' class='logo'>
+            <p><a href="#">FIN</a> <a href="#">ENG</a></p>
+        </div>
+        <nav class="navbar">
+            <div class="brand-title"><a href="index.html">MIRACLE ASC</a></div>
+            <div class="navbar-links">
+                <ul>
+                    <li><div class="dropdown">
+                        <button class="dropdown-btn">CAMERAS</button>
+                        <div class="dropdown-content">
+                            <a href="cameras.html">CAMERA STATIONS</a>
+                            <a href="current_cameras.html">CURRENT CAMERAS</a>
+                            <a href="old_cameras.html">OLD CAMERAS</a>
+                        </div></div></li>
+                    <li><a href="imagepr.html">IMAGE PROCESSING</a></li>
+                    <li><a href="data.html">QUICK LOOK DATA</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        
+        
+        <!-- -------------------------  BANNER  ------------------------- -->
+
+
+        <div class="banner">
+            <h1>QUICK LOOK DATA</h1>
+        </div>
+
+
+        <!-- -------------------------  CONTAINER  ----------------------- -->
+
+
+        <div class="container">
+            <div class="columns">
+                <div class="column1">
+                    <h1>Scientist's Guide to Keograms</h1>
+                    <p>This page demonstrates the use of keograms when checking for data availability or searching for interesting events.
+                        A keogram is a time-versus-latitude plot created from the individual 
+                        images captured during the night. They yield information of the 
+                        auroral activity during the whole night in one easily transferable
+                        image. The current all-sky stations run by FMI produce keograms
+                        every day, and new data are placed in WWW for public access as
+                        soon as possible.</p>
+                    <p>Keograms can be considered images from imaging photometers - the 
+                        pixel column corresponds to the latitude coverage of the 
+                        all-sky camera. In case of cameras with filters and a filter 
+                        wheel, we usually create the keograms from the wavelength of 
+                        557.7nm (ie. green line). Colour images naturally result in 
+                        colour keograms.</p>
+                    <p>Please note that the instructions here should be considered 
+                        guidelines. You should first use common sense in combining 
+                        the tips below. Of course, for "real interpretation" we need 
+                        to use the actual images.</p>
+                    <br>
+                </div>
+                <div class="column2">
+                    <h1>FMI All-sky camera quicklook data</h1>
+                    <p>Keograms for one day can be found 
+                    <a href="https://space.fmi.fi/MIRACLE/ASC/?page=keograms">here</a>.</p>
+                    <p>FMI Old all-sky camera quicklook tables can be found
+                    <a href="https://space.fmi.fi/MIRACLE/ASC/?page=old%20quick%20look">here</a>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1 style="padding-left: 1vw;">Guide pictures</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <th><img src="pictures/table1.jpg"></th>
+                        <th>Pretty southward drifting clouds illuminated by the Moon. 
+                            The dark band at the lower edge of the keogram comes from
+                             the trees in the southern horizon.</th>
+                        <th><img src="pictures/table2.jpg"></th>
+                        <th>Thick and even cloud cover moving into the camera field-of-view.
+                            Typical sight in the Helsinki images and very bright because
+                            of the light pollution of the city around.</th>
+                    </tr>
+                    <tr>
+                        <th><img src="pictures/table3.jpg"></th>
+                        <th>Drifting clouds that look very much like an auroral activity. 
+                            Images reveal that there are nothing but clouds there</th>
+                        <th><img src="pictures/table4.jpg"></th>
+                        <th>Real aurora in the colour keograms. The advantage of 
+                            the colour is that aurora is always (yellow-ish) green.
+                            The clouds later that night have a different shade.</th>
+                    </tr>
+                    <tr>
+                        <th><img src="pictures/table5.jpg"></th>
+                        <th>Nice night for any event study: multiple onsets, 
+                            no Moon, lots of activity in the evening.</th>
+                        <th><img src="pictures/table6.jpg"></th>
+                        <th>Surprisingly many nights contain the image of the 
+                            Moon somewhere. As the Moon crosses the longitude 
+                            of the station, it is "line-scanned" and a circular
+                            object is seen in the keogram. It does not spoil 
+                            auroral observations,though. Nice auroras here: first 
+                            discrete and then diffuse in the early morning.</th>
+                    </tr>
+                    <tr>
+                        <th><img src="pictures/table7.jpg"></th>
+                        <th>It was cloudy at this particular station. Fog and 
+                            clouds result in diffuse images like this. It is a
+                            good idea to check the other stations - another reason
+                            to have many stations.</th>
+                        <th><img src="pictures/table8.jpg"></th>
+                        <th>Nothing can be seen. Now there are two possibilities: 
+                            either there was no auroral activity or it was cloudy.</th>
+                    </tr>
+                    <tr>
+                        <th><img src="pictures/table10.jpg"></th>
+                        <th>The bits were like multiplexed through a time-flux capacitor, and...
+                            (read = that camera has not operated as it should have).</th>
+                        <th><img src="pictures/table9.jpg"></th>
+                        <th>Auroral recordings started around 14:20UT, but were 
+                            interrupted by a power failure around 15:30UT. Recordings
+                            then restarted around 19:20UT. There are uninterruptible
+                            power supplies at every station, but their capasity is 
+                            not large enough to operate the system for several hours.
+                            Note the white marks at bottom of the keogram that indicate 
+                            "no images".</th>
+                    </tr>
+                    <tr>
+                        <th><img src="pictures/table11.gif"></th>
+                        <th>This small "Not Available" label simply means that the 
+                            keogram is not available. It does not mean anything else: 
+                            we may have hundreds of images from that time period, but 
+                            there is, for some reason, no keogram.</th>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+        
+        
+        
+        <!-- -------------------------  FOOTER  --------------------------- -->
+
+
+        <footer>
+            <img src='pictures\il-logo-fi-se-en-white-crop.png' alt='The logo of the Finnish meteorological institute: a white circle with intersecting half circles inside.'>
+        </footer>
+    </body>
+</html>
