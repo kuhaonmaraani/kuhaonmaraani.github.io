@@ -1,0 +1,134 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="style_project.css">
+        <script src="script.js" defer></script>
+        <title>TomoScand</title>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width'>
+        <link rel="icon" href="pictures/icon2.png" type="image/x-icon">
+    </head>
+    <body>
+
+
+        <!-- -----------------  HEADER & NAVIGATION  -------------------- -->
+        
+        
+        <img src='pictures\fmi_logo.jpg' alt='The logo of the Finnish meteorological institute: a blue circle with intersecting half circles inside.' class='logo'>
+        <nav class="navbar">
+            <div class="brand-title"><a href="index.html">TOMOSCAND</a></div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="project.html">PROJECT</a></li>
+                    <li><a href="data.html">DATA</a></li>
+                    <li><a href="articles.html">ARTICLES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        
+        <!-- -------------------------  BANNER  ------------------------- -->
+
+
+        <div class="banner">
+            <!-- uncomment if you want to add a text box over the banner image 
+            <div class="banner-text-box">
+                <h1>A title</h1>
+                <p>A paragraph</p>
+            </div> -->
+        </div>
+
+
+        <!-- -------------------------  CONTAINER  ----------------------- -->
+
+
+        <div class="container">
+            <div class="column1">
+                <h1>What the project is about</h1>
+                <p>TomoScand is an advanced tomography code, which uses Bayesian statistical approach in the inversion. The challenge of ill-posed problem due to sparse observations is tackled in the Bayesian framework by introducing additional information for the reconstruction with prior probability distributions. Gaussian Markov random fields are used when constructing the prior electron density profiles, which makes the problem computationally feasible also for large numbers (>300000) of unknowns. </p>
+                <p>In the Near-Real-Time version of TomoScand the biases of GNSS receivers are estimated by introducing them as additional unknows for the inversion problem. The satellite biases are estimated with the methodologies developed for the Multi-GNSS Experiment (MGEX) of the International GNSS Service (IGS). For more detailed information, References under the Product description link in the navigation bar.</p>
+                <div class="center">
+                    <img src="pictures/TEC_lat_long_realistic_map_plot_201811091100.png" alt="A plot of total electron content in the ionosphere on 9.11.2018 at 11:00 UTC over the map of Finland.">
+                <div class="caption">A plot of total electron content in the ionosphere</div>
+                </div>
+                <br>
+                <h1>Related links</h1>
+                <ul class="main-list">
+                    <li class="main-list-item">Collaborators:
+                        <ul class="nested-list">
+                            <li><a href="https://www.ilmatieteenlaitos.fi/">FMI</a></li>
+                            <li><a href="https://www.sgo.fi/">SGO</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-list-item">LEO beacon receivers:
+                        <ul class="nested-list">
+                            <li><a href="http://www.sgo.fi/~j/jitter/web/">Jitter</a></li>
+                            <li><a href="http://www.rfsorcerers.com/en/front-page">RF Sorcerers</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-list-item">GNSS data:
+                        <ul class="nested-list">
+                            <li><a href="http://www.geotrim.fi/">Geotrim</a></li>
+                            <li><a href="https://swepos.lantmateriet.se/default.aspx">SWEPOS</a></li>
+                            <li><a href="http://www.igs.org/">IGS</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-list-item">GNSS preprocessing:
+                        <ul class="nested-list">
+                            <li><a href="https://www.haystack.mit.edu/atm/arrays/gps/">MIT Haystack</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-list-item">Incoherent scatter radar:
+                        <ul class="nested-list">
+                            <li><a href="http://www.eiscat.se/">EISCAT</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-list-item">Dynasondes:
+                        <ul class="nested-list">
+                            <li><a href="http://www.eiscat.se/">EISCAT dynasonde</a></li>
+                            <li><a href="http://www2.irf.se/Offices/Kiruna/?chosen=office_kiruna">IRF</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-list-item">Satellites:
+                        <ul class="nested-list">
+                            <li><a href="https://epop.phys.ucalgary.ca/">ePOP on CASSIOPE</a></li>
+                            <li><a href="https://earth.esa.int/web/guest/missions/esa-operational-eo-missions/swarm">SWARM</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            
+            </div>
+            <div class="column2">
+                <img src="pictures\measurement_geometry.png">
+                <div class="caption">Measurement geometry</div>
+                <!-- <p>More info on measurement geometry here. Maybe another sentence to make this look nicer.</p> -->
+                <br> 
+                <h1>Acknowledgements</h1>
+                <p>The TomoScand products use the highrate GNSS data provided by International GNSS Service, the International Association of Geodesy Reference Frame Sub-Commission for Europe Permanent GNSS Network (EUREF EPN) available from the EUREF EPN Regional Data Centre by Bundesamt für Kartografie und Geodäsie.</p>
+                <p>TomoScand uses satellite code bias information from the International GNSS Service Multi-GNSS Experiment and Pilot Project, available from The Crustal Dynamics Data Information System, see additional information in references. TomoScand developers are grateful for the dynasonde data from European Incoherent Scatter Scientific Association Tromsø site and The Institutet för rymdfysik Kiruna site.</p>
+                <p>GNSS data preprocessing is performed with the Deutsche GeoForschungsZentrum RINEX GNSS Data Conversion and Manipulation Toolbox and with the open source GPSTk software, which is sponsored by the Space and Geophysics Laboratory, within the Applied Research Laboratories at the University of Texas at Austin (ARL:UT).</p>
+                <p>The TomoScand developers are grateful for the developers of Multifrontal Massively Parallel sparse direct Solver (MUMPS) which is used in the analysis for the computations with an R language interface for Multifrontal Massively Parallel sparse direct Solver (RMUMPS) developed by Mikko Orispää (https://github.com/morispaa/rmumps).</p>
+                <br>
+                <h1>Video animations</h1>
+                <br>
+                <a href="animation1.html">Animation 1</a>
+                <br>
+                <a href="animation2.html">Animation 2</a>
+            </div>
+        </div>
+        
+        
+        <!-- -------------------------  FOOTER  --------------------------- -->
+
+
+        <footer>
+            <img src='pictures\il-logo-fi-se-en-white-crop.png' alt='The logo of the Finnish meteorological institute: a white circle with intersecting half circles inside.'>
+            <img src='pictures\oulu_logo.png' alt='The logo of the university of Oulu: a blue tower with three sparks above.'>
+        </footer>
+    </body>
+</html>

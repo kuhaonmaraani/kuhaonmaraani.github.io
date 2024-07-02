@@ -1,0 +1,129 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="style_data.css">
+        <script src="script.js" defer></script>
+        <title>TomoScand</title>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width'>
+        <link rel="icon" href="pictures/icon2.png" type="image/x-icon">
+    </head>
+    <body>
+
+
+        <!-- -----------------  HEADER & NAVIGATION  -------------------- -->
+        
+        
+        <img src='pictures/fmi_logo.jpg' alt='The logo of the Finnish meteorological institute: a blue circle with intersecting half circles inside.' class='logo'>
+        <nav class="navbar">
+            <div class="brand-title"><a href="index.html">TOMOSCAND</a></div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="project.html">PROJECT</a></li>
+                    <li><a href="data.html">DATA</a></li>
+                    <li><a href="articles.html">ARTICLES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        
+        <!-- -------------------------  BANNER  ------------------------- -->
+
+
+        <div class="banner">
+            <!-- uncomment if you want to add a text box over the banner image 
+            <div class="banner-text-box">
+                <h1>A title</h1>
+                <p>A paragraph</p>
+            </div> -->
+        </div>
+
+
+        <!-- -------------------------  CONTAINER  ----------------------- -->
+
+
+        <div class="container">
+            <div class="columns">
+                <div class="column1">
+                    <h1>Title about data</h1>
+                    <p>The TomoScand2D and TomoScand3D products present an approach to use Near-Real-Time data from GNSS in regional volumetric reconstructions of ionospheric electron density.</p>
+                    <p>The analysis area covers Northern Europe, Fennoscandia and Svalbard. The reconstructions are based on Bayesian statistical inversion which uses a priori -information from one to two ionosondes. The inversion methodology for the reconstructions have been developed in the Finnish Meteorological Institute with the support of University of Oulu and the Academy of Finland.</p>
+                    <br>
+                    <h1>TomoScand 2D</h1>
+                    <p>The TomoScand2D product shows three slices from the TomoScand3D product. One of the slices shows electron density distribution in a latitude-altitude plot along the centre longitude (24.75 deg E) of the analysis area. The two other plots show longitude-altitude cuts along two constant latitudes, one under the auroral zone (67.75 deg N) and one at sub-auroral region (60.75 deg). The reference coordinate system is WGS84.</p>
+                    <br>
+                    <img src="pictures\superplot_3D_201811091100.png" alt="Plot of electron density as a function of altitude and latitude with several different values of longitude. Date 9.11.2018">
+                </div>
+                <div class="column2">
+                    <img src="pictures\alt_long_2D_plot_lat60_201811091100.png" alt="Plot of electron density as a function of altitude and longitude with latitude value of 60 degrees. Date 9.11.2018">
+                    <h1>TomoScand 3D</h1>
+                    <p>The TomoScand3D product shows a volumetric image of electron density in the altitude range of 100-800 km. The product is updated once per 15 min. As input the TomoScand inversion uses dual frequency signals both from Low Earth Orbit satellites (150 and 400 MHz) and from the Global Positioning System (GPS). The network of Beacon receivers contains currently 15 stations in Finland, Norway and Svalbard, which receive signals from the Canadian e-POP instrument and from Russian COSMOS satellites. GNSS signals are received by a set of stations in the EUREF network.</p>
+                    <p>A priori information for the inversion is acquired from dynasondes in Tromsø (by the EISCAT Association) and in Kiruna (by Swedish Institute of Space Physics). The reference coordinate system is WGS84. The JSON file contains the coordinates and the reconstructed electron density and also additional information of about the available GNSS stations and satellites used in the reconstruction. The file itself contains additional information and is self-explanatory.</p>
+                </div>
+            </div>
+            <br>
+
+            <div class="slicer-fig">
+                <h2>Tähän slicer</h2>
+            </div>
+
+            <h1>Key data sources</h1>
+            <div class="columns">
+                <div class="column1">
+                    <ul class="main-list">
+                        <li class="main-list-item">GNSS data
+                            <ul class="nested-list">
+                                <li>International Association of Geodesy Reference Frame Sub-Commission for Europe Permanent GNSS Network (EUREF EPN)</li>
+                                <li>International GNSS Service (IGS)</li>
+                                <li>Bundesamt für Kartografie und Geodäsie (BKG)</li>
+                            </ul>
+                        </li>
+                        <li class="main-list-item">Dynasondes
+                            <ul class="nested-list">
+                                <li>European Incoherent Scatter Scientific Association (EISCAT) Tromsø dynasonde</li>
+                                <li>Institutet för rymdfysik (IRF) Kiruna dynasonde</li>
+                            </ul>
+                        </li>
+                        <li class="main-list-item">GNSS tools 
+                            <ul class="nested-list">
+                                <li>GPSTk project, which is sponsored by the Space and Geophysics Laboratory, within the Applied Research Laboratories at the University of Texas at Austin (ARL:UT)</li>
+                            </ul>
+                        </li>
+                        <li class="main-list-item">Satellites
+                            <ul class="nested-list">
+                                <li>GPS</li>
+                                <li>Galileo</li>
+                                <li>GLONASS</li>
+                            </ul>
+                        </li>
+                        <li class="main-list-item">Other tools
+                            <ul class="nested-list">
+                                <li>R language interface for Multifrontal Massively Parallel sparse direct Solver (RMUMPS)</li>
+                            </ul>
+                        </li>
+                    </ul>                    
+                </div>
+
+
+                <div class="column2">
+                   <img src="pictures\map.PNG" style="padding: 2vw 0vw 1vw 0vw;margin: 0;">
+                   <h2 style="font-size: 1.2vw; font-style: italic;">Plot of station locations in Finland<h2>                 
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- -------------------------  FOOTER  --------------------------- -->
+
+
+        <footer>
+            <img src='pictures\il-logo-fi-se-en-white-crop.png' alt='The logo of the Finnish meteorological institute: a white circle with intersecting half circles inside.'>
+            <img src='pictures\oulu_logo.png' alt='The logo of the university of Oulu: a blue tower with three sparks above.'>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="style_animation.css">
+        <script src="script.js" defer></script>
+        <title>TomoScand</title>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width'>
+        <link rel="icon" href="pictures/icon2.png" type="image/x-icon">
+    </head>
+    <body>
+
+
+        <!-- -----------------  HEADER & NAVIGATION  -------------------- -->
+        
+        
+        <img src='pictures\fmi_logo.jpg' alt='The logo of the Finnish meteorological institute: a blue circle with intersecting half circles inside.' class='logo'>
+        <nav class="navbar">
+            <div class="brand-title"><a href="index.html">TOMOSCAND</a></div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="project.html">PROJECT</a></li>
+                    <li><a href="data.html">DATA</a></li>
+                    <li><a href="articles.html">ARTICLES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        
+        <!-- -------------------------  BANNER  ------------------------- -->
+
+
+        <div class="banner">
+            <!-- uncomment if you want to add a text box over the banner image 
+            <div class="banner-text-box">
+                <h1>A title</h1>
+                <p>A paragraph</p>
+            </div> -->
+        </div>
+
+
+        <!-- -------------------------  CONTAINER  ----------------------- -->
+
+
+        <div class="container">
+            <h1>Animation 2</h1>
+            <br>
+            <video id="myVideo" src="pictures/movs2.mp4" controls>
+                Your browser does not support the video tag.
+            </video>
+            <br>
+            <div id="speedControls">
+                <label for="speed">Playback Speed:</label>
+                <select id="speed">
+                    <option value="1">1x</option>
+                    <option value="2">2x</option>
+                    <option value="3">3x</option>
+                    <option value="4">4x</option>
+                    <option value="5">5x</option>
+                </select>
+            </div>
+            <p>Paragraph about the animation</p>
+        </div>
+
+        <script>
+            var video = document.getElementById("myVideo");
+            var speedSelect = document.getElementById("speed");
+    
+            speedSelect.addEventListener("change", function() {
+                video.playbackRate = parseFloat(speedSelect.value);
+            });
+        </script>
+        
+        
+        <!-- -------------------------  FOOTER  --------------------------- -->
+
+
+        <footer>
+            <img src='pictures\il-logo-fi-se-en-white-crop.png' alt='The logo of the Finnish meteorological institute: a white circle with intersecting half circles inside.'>
+            <img src='pictures\oulu_logo.png' alt='The logo of the university of Oulu: a blue tower with three sparks above.'>
+        </footer>
+    </body>
+</html>
